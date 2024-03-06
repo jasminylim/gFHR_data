@@ -12,11 +12,12 @@ Below is the description of each dataset:
 |Filename|Description|Size|SAM Run Time [s]|
 |----|-----|-----|-----|
 |```gFHR-LF-1.csv```|Load Follows. 100% power -> 50% power -> 100% power, 10 power changes, 1 hour intervals| (1803,151)|~|
-|```gFHR-LF-2.csv```|Random power changes. 10% increments, hold for 1 hour, 72 power changes|(12189, 151)|~|
-|```gFHR-LF-3.csv```|Random power changes. 5% increments, hold for 1 hour, 10 power changes|(1868, 151)|~|
-|```gFHR-LF-4.csv```|Random power changes. 5% increments, hold for 10 minutes, 300 power changes|(15926, 151)|112241.01|
-|```gFHR-LF-5.csv```|Random power changes. 5% increments, hold for 10 minutes, 250 power changes|(16230, 151)|105545.55|
-|```gFHR-LF-6.csv```|Random power changes. 5% increments, hold for 15-20 minutes, 200 power changes|(14133, 151)|91346.42|
+|```gFHR-LF-2.csv```|Random power changes. min. 10% increments, hold for 1 hour, 72 power changes|(12189, 151)|~|
+|```gFHR-LF-3.csv```|Random power changes. min. 5% increments, hold for 1 hour, 10 power changes|(1868, 151)|~|
+|```gFHR-LF-4.csv```|Random power changes. min. 5% increments, hold for 10 minutes, 300 power changes|(15926, 151)|112241.01|
+|```gFHR-LF-5.csv```|Random power changes. min. 5% increments, hold for 10 minutes, 250 power changes|(16230, 151)|105545.55|
+|```gFHR-LF-6.csv```|Random power changes. min. 5% increments, hold for 15-20 minutes, 200 power changes|(14133, 151)|91346.42|
+|```gFHR-LF-7.csv```|Random power changes. min. 5% increments, hold for 30 minutes, 100 power changes|(10069, 156)|54971.39|
 
 The input and states are listed in the tables below:
 
