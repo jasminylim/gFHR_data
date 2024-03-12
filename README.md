@@ -7,17 +7,28 @@ This data set is for the gFHR (General Fluoride-Salt-Cooled High-Temperature Rea
 Last Updated: March 5, 2024
 
 ### Data 
-Below is the description of each dataset:
 
-|Filename|Description|Size|SAM Run Time [s]|
-|----|-----|-----|-----|
-|```gFHR-LF-1.csv```|Load Follows. 100% power -> 50% power -> 100% power, 10 power changes, 1 hour intervals| (1803,151)|~|
-|```gFHR-LF-2.csv```|Random power changes. min. 10% increments, hold for 1 hour, 72 power changes|(12189, 151)|~|
-|```gFHR-LF-3.csv```|Random power changes. min. 5% increments, hold for 1 hour, 10 power changes|(1868, 151)|~|
-|```gFHR-LF-4.csv```|Random power changes. min. 5% increments, hold for 10 minutes, 300 power changes|(15926, 151)|112241.01|
-|```gFHR-LF-5.csv```|Random power changes. min. 5% increments, hold for 10 minutes, 250 power changes|(16230, 151)|105545.55|
-|```gFHR-LF-6.csv```|Random power changes. min. 5% increments, hold for 15-20 minutes, 200 power changes|(14133, 151)|91346.42|
-|```gFHR-LF-7.csv```|Random power changes. min. 5% increments, hold for 30 minutes, 100 power changes|(10069, 156)|54971.39|
+The data is organized into two directories:
+```sh
+.
+└── data
+    ├── SAM
+    └── SAM_interp
+```
+* SAM : original SAM data (Time step $\Delta t$ **varies** from 5-25 seconds)
+* SAM_interp : interpolated SAM data (**Constant** time step $\Delta t=5$ seconds)
+
+#### Below is the description of each dataset:
+
+|Filename|Description|SAM Size|Interpolated Size|SAM Run Time [s]|
+|----|-----|-----|-----|-----|
+|```gFHR-LF-1.csv```|Load Follows. 100% power -> 60% power -> 100% power, 10 power changes, 1 hour intervals| (1803,151)|(7920, 156)|~|
+|```gFHR-LF-2.csv```|Random power changes. min. 10% increments, hold for 1 hour, 6 power changes|(986, 151)|(4320, 156)|~|
+|```gFHR-LF-3.csv```|Random power changes. min. 5% increments, hold for 1 hour, 10 power changes|(1904, 151)|(7920, 156)|~|
+|```gFHR-LF-4.csv```|Random power changes. min. 5% increments, hold for 10 minutes, 300 power changes|(15926, 151)|(40320, 151)|112241.01|
+|```gFHR-LF-5.csv```|Random power changes. min. 5% increments, hold for 10 minutes, 250 power changes|(16230, 151)|(48718, 151)|105545.55|
+|```gFHR-LF-6.csv```|Random power changes. min. 5% increments, hold for 15-20 minutes, 200 power changes|(14133, 151)|(43845, 151)|91346.42|
+|```gFHR-LF-7.csv```|Random power changes. min. 5% increments, hold for 30 minutes, 100 power changes|(10069, 156)|(37918, 156)|54971.39|
 
 The input and states are listed in the tables below:
 
@@ -65,10 +76,10 @@ These state values can be used to assist in predictions. They are not on the sta
 |----|-----|-----|
 |```Pump:pump_RPM```|$n_p$ : Primary Pump Speed|RPM|
 |```Solar-pump:pump_RPM```|$n_s$ : Secondary Pump Speed|RPM|
-|```C_I135```|$N_{I}$ : Iodine-135 Global Concentration|$\Delta$k/k|
-|```C_XE135```|$N_{Xe}$ : Xenon-135 Global Concentration|$\Delta$k/k|
+|```C_I135```|$N_{I}$ : Iodine-135 Global Concentration|$\Delta$ k/k|
+|```C_XE135```|$N_{Xe}$ : Xenon-135 Global Concentration|$\Delta$ k/k|
 
-### Accessing the data
+### Accessing the data 
 
 Use the following list of column names to import the data:
 ```
