@@ -4,7 +4,7 @@ This data set is for the gFHR (General Fluoride-Salt-Cooled High-Temperature Rea
 
 
 ### Version
-Last Updated: March 22, 2024
+Last Updated: March 31, 2024
 
 ### Data 
 
@@ -30,6 +30,8 @@ The data is organized into two directories:
 |```gFHR-LF-6.csv```|Random power changes. min. 5% increments, hold for 15-20 minutes, 200 power changes|(14133, 151)|(43845, 151)|91346.42|
 |```gFHR-LF-7.csv```|Random power changes. min. 5% increments, hold for 30 minutes, 100 power changes|(10069, 156)|(37918, 156)|54971.39|
 |```gFHR-LF-8.csv```|Load Follows - random power changes|(11375, 156)|(37439, 156)|62879.65|
+|```gFHR-LF-9.csv```|Load Follows - random power changes|(17733, 156)|(56400, 156)|117298.14 s|
+|```gFHR-LF-10.csv```|Load Follows - random power changes|(17461, 156)|(55920, 156)|131989.84 s|
 
 The input and states are listed in the tables below:
 
