@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # read data from file
-filename = "gFHR-LF-10.csv"
+filename = "gFHR-LF-12.csv"
 
 with open("SAM/"+filename, "r") as file:
     names = file.readline()

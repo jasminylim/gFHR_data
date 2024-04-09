@@ -32,6 +32,8 @@ The data is organized into two directories:
 |```gFHR-LF-8.csv```|Load Follows - random power changes|(11375, 156)|(37439, 156)|62879.65|
 |```gFHR-LF-9.csv```|Load Follows - random power changes|(17733, 156)|(56400, 156)|117298.14 s|
 |```gFHR-LF-10.csv```|Load Follows - random power changes|(17461, 156)|(55920, 156)|131989.84 s|
+|```gFHR-LF-11.csv```|Random power changes. min. 2% increments, hold for 19 minutes, 200 power changes|(15004, 156)|(48717, 156)|96712.98 s|
+|```gFHR-LF-12.csv```|Random power changes. min. 2% increments, hold for 19 minutes, 200 power changes|(14983, 156)|(48718, 156)|95334.07 s|
 
 The input and states are listed in the tables below:
 
